@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Software Engineering Department Enrollment Form</title>
+    <style>
+        /* Add styles for form fields */
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #3e8e41;
+            }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Please select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="previous-degree">Previous Degree:</label>
+        <input type="text" id="previous-degree" name="previous-degree" required>
+
+        <label for="previous-institution">Previous Institution:</label>
+        <input type="text" id="previous-institution" name="previous-institution" required>
+
+        <label for="gpa">Grade Point Average (GPA):</label>
+        <input type="text" id="gpa" name="gpa" required>
+
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+        <label for="motivation-letter">Motivation Letter:</label>
+        <textarea id="motivation-letter" name="motivation-letter" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
